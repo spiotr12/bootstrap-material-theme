@@ -1,0 +1,7 @@
+{
+  "name": "bootstrap-material-theme",
+  "version": "0.0.1",
+  "dependencies": {
+    "bootstrap": "4.0.0"
+  }
+}
