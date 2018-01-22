@@ -1,7 +1,13 @@
 {
   "name": "bootstrap-material-theme",
   "version": "0.0.1",
+  "scripts": {
+    "scss": "node-sass --watch scss/bootstrap-material-theme.scss -o dist/css/"
+  },
   "dependencies": {
     "bootstrap": "4.0.0"
+  },
+  "devDependencies": {
+    "node-sass": "4.7.2"
   }
 }
