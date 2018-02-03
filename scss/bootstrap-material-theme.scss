@@ -1,5 +1,5 @@
-@import "variables";
-
+@import "variables"; // Override
+// Bootstrap 4
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
 @import "mixins"; // Override
@@ -35,5 +35,5 @@
 @import "~bootstrap/scss/carousel";
 @import "utilities"; // Override
 @import "~bootstrap/scss/print";
-
+// Bootstrap Material Theme
 @import "buttons";
