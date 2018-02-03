@@ -2,12 +2,13 @@
   "name": "bootstrap-material-theme",
   "version": "0.0.1",
   "scripts": {
-    "scss": "node-sass --watch scss/bootstrap-material-theme.scss -o dist/css/"
+    "scss": "node-sass --importer=node_modules/node-sass-tilde-importer --watch scss/bootstrap-material-theme.scss -o dist/css/"
   },
   "dependencies": {
     "bootstrap": "4.0.0"
   },
   "devDependencies": {
-    "node-sass": "4.7.2"
+    "node-sass": "4.7.2",
+    "node-sass-tilde-importer": "1.0.1"
   }
 }
