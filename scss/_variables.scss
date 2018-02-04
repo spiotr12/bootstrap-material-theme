@@ -1,12 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
-$font-family-sans-serif: 'Roboto', 'Helvetica', 'Arial', sans-serif !default;
-
 $body-bg:                     $md-grey-50 !default;  // 143
 
 $border-radius:               .13rem !default;  // 210
 $border-radius-lg:            .3rem !default;  // 211
 $border-radius-sm:            .2rem !default;  // 212
+
+$font-family-sans-serif:      'Roboto', 'Helvetica', 'Arial', sans-serif !default; // 229
 
 $btn-border-radius:           $border-radius; // 374
 $btn-border-radius-lg:        $border-radius-lg; // 375
