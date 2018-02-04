@@ -32,3 +32,22 @@
     @include bmt-form-control-underline(theme-color(danger));
   }
 }
+
+.form-group {
+  position: relative;
+  .label {
+    position: absolute;
+    pointer-events: none;
+    transition: 0.3s ease all;
+
+    // hint to browser for optimization
+    &.label-floating {
+      will-change: left, top, contents; // TODO: evaluate effectiveness - looking for community feedback
+    }
+  }
+
+  &.is-focused .label {
+  }
+}
+
+
