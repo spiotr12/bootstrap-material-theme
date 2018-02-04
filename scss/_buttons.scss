@@ -1,3 +1,13 @@
 .btn {
+  text-transform: uppercase !important;
+}
 
+//
+// Alternate buttons
+//
+
+@each $color, $value in $theme-colors {
+  .btn-flat-#{$color} {
+    @include button-flat-variant($value);
+  }
 }
