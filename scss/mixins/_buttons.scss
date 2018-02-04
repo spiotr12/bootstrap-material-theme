@@ -20,7 +20,7 @@
 
   &.disabled,
   &:disabled {
-    color: $color;
+    color: $grey;
     background-color: transparent;
   }
 
@@ -61,12 +61,13 @@
 
   &.disabled,
   &:disabled {
-    color: $color;
+    color: $grey;
     background-color: transparent;
     border-color: transparent;
 
     &:hover {
-      background-color: lighten($color, 20%);
+      color: $grey-100;
+      background-color: $color;
     }
   }
 

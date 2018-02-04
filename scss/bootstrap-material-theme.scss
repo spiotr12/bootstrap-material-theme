@@ -39,4 +39,6 @@
 @import "utilities"; // Bootstrap 4 & Override
 @import "~bootstrap/scss/print";
 // Bootstrap Material Theme
+@import "functions";
 @import "buttons";
+@import "reboot";

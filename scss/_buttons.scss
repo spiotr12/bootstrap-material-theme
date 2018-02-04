@@ -1,7 +1,12 @@
 .btn {
   text-transform: uppercase !important;
   min-width: $bmt-btn-min-width;
-  //margin: 0 $bmt-btn-margin-x;
+  margin: 0 $bmt-btn-margin-x;
+
+  &.disabled,
+  &:disabled {
+    cursor: no-drop;
+  }
 }
 
 //

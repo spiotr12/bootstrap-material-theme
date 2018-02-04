@@ -1,5 +1,24 @@
+// Colors
+
+$blue:    $blue-500 !default;
+$indigo:  $indigo-500 !default;
+$purple:  $purple-500 !default;
+$pink:    $pink-500 !default;
+$red:     $red-500 !default;
+$orange:  $orange-500 !default;
+$yellow:  $yellow-500 !default;
+$green:   $green-500 !default;
+$teal:    $teal-500 !default;
+$cyan:    $cyan-500 !default;
+$grey:    $grey-500 !default;
+
+// Font
+$bmt-html-font-size: 14px;
+
+// Buttons
+
 $bmt-input-btn-min-width:         4rem !default;
 $bmt-btn-min-width:               $bmt-input-btn-min-width !default;
 
-//$bmt-input-btn-margin-x:          .5rem !default;
-//$bmt-btn-margin-x:                $bmt-input-btn-margin-x !default;
+$bmt-input-btn-margin-x:          .5rem !default;
+$bmt-btn-margin-x:                $bmt-input-btn-margin-x !default;
