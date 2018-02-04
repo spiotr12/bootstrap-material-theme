@@ -1,6 +1,7 @@
 .btn {
   text-transform: uppercase !important;
   min-width: $bmt-btn-min-width;
+  //margin: 0 $bmt-btn-margin-x;
 }
 
 //
@@ -10,5 +11,11 @@
 @each $color, $value in $theme-colors {
   .btn-flat-#{$color} {
     @include button-flat-variant($value);
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .btn-raised-#{$color} {
+    @include button-raised-variant($value);
   }
 }
