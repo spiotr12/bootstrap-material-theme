@@ -4,7 +4,7 @@
   padding: .575rem 0;
   transition: background 0s ease-out;
 
-  @include bmd-form-control-underline(theme-color(primary));
+  @include bmt-form-control-underline(theme-color(primary));
 
   &:focus,
   .is-focused & {
@@ -14,21 +14,21 @@
 
   &.has-success {
     color: theme-color(success);
-    @include bmd-form-control-underline(theme-color(success));
+    @include bmt-form-control-underline(theme-color(success));
   }
 
   &.has-info {
     color: theme-color(info);
-    @include bmd-form-control-underline(theme-color(info));
+    @include bmt-form-control-underline(theme-color(info));
   }
 
   &.has-warning {
     color: theme-color(warning);
-    @include bmd-form-control-underline(theme-color(warning));
+    @include bmt-form-control-underline(theme-color(warning));
   }
 
   &.has-danger {
     color: theme-color(danger);
-    @include bmd-form-control-underline(theme-color(danger));
+    @include bmt-form-control-underline(theme-color(danger));
   }
 }

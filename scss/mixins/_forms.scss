@@ -1,12 +1,4 @@
-@mixin bmd-form-control-border() {
-  //background-color: $body-bg;
-  //box-shadow: none;
-  //border: 0;
-  //border-radius: 0;
-  //background-size: 1px 100%, 100% 100%;
-}
-
-@mixin bmd-form-control-underline($color) {
+@mixin bmt-form-control-underline($color) {
   background-image: linear-gradient(
                   to top,
                   $color 2px,
