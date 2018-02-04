@@ -4,17 +4,21 @@
 @import "variables"; // Custom
 // Bootstrap 4
 @import "~bootstrap/scss/functions";
+@import "functions";  // Bootstrap Material Theme
 @import "~bootstrap/scss/variables";
 @import "mixins"; // Bootstrap 4 & Override
 @import "~bootstrap/scss/root";
 @import "~bootstrap/scss/reboot";
+@import "reboot";  // Bootstrap Material Theme
 @import "~bootstrap/scss/type";
 @import "~bootstrap/scss/images";
 @import "~bootstrap/scss/code";
 @import "~bootstrap/scss/grid";
 @import "~bootstrap/scss/tables";
 @import "~bootstrap/scss/forms";
+@import "forms";  // Bootstrap Material Theme
 @import "~bootstrap/scss/buttons";
+@import "buttons";  // Bootstrap Material Theme
 @import "~bootstrap/scss/transitions";
 @import "~bootstrap/scss/dropdown";
 @import "~bootstrap/scss/button-group";
@@ -38,7 +42,3 @@
 @import "~bootstrap/scss/carousel";
 @import "utilities"; // Bootstrap 4 & Override
 @import "~bootstrap/scss/print";
-// Bootstrap Material Theme
-@import "functions";
-@import "buttons";
-@import "reboot";

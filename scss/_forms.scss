@@ -1,0 +1,26 @@
+.form-control {
+  padding: .575rem 0;
+  transition: background 0s ease-out;
+
+  //box-shadow: none;
+  background-size: 1px 100%, 100% 100%;
+
+  &:focus,
+  .is-focused &{
+    //box-shadow: none;
+  }
+
+  &.has-success {
+  }
+
+  &.has-info {
+  }
+
+  &.has-warning {
+  }
+
+  &.has-danger {
+    color: theme-color(danger);
+    @include bmd-form-control-underline(theme-color(danger));
+  }
+}

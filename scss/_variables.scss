@@ -22,3 +22,8 @@ $bmt-btn-min-width:               $bmt-input-btn-min-width !default;
 
 $bmt-input-btn-margin-x:          .5rem !default;
 $bmt-btn-margin-x:                $bmt-input-btn-margin-x !default;
+
+// Form
+
+$bmt-form-control-bg-repeat-y: no-repeat !default;
+$bmt-form-control-bg-position: center bottom, center calc(100% - 1px) !default;
