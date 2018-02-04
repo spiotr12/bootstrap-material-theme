@@ -1,6 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto);  // TODO: Change this to use npm package
+@import url("https://fonts.googleapis.com/css?family=Roboto");  // TODO: Change this to use npm package
 @import "colors";
-@import "variables"; // Override
+@import "bootstrap-variables"; // Override
+@import "variables"; // Custom
 // Bootstrap 4
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
