@@ -3,13 +3,6 @@
 //
 // Variables
 
-// External libraries variables override
-
-// roboto-fontface
-$roboto-font-path:  '../../node_modules/roboto-fontface/fonts' !default;
-// sass-rem
-$rem-baseline:      $html-font-size !default;
-
 // Colors
 
 $blue:    $blue-500 !default;
@@ -36,7 +29,7 @@ $theme-colors: map-merge((
 
 // Color modifies
 
-$highlight-modifier:        5% !default;
+$highlight-modifier:        7.5% !default;
 $highlight-modifier-light:  $highlight-modifier !default;
 $highlight-modifier-dark:   $highlight-modifier !default;
 
@@ -44,6 +37,10 @@ $highlight-modifier-dark:   $highlight-modifier !default;
 // Font
 
 $html-font-size:        14px !default;
+// EXTERNAL LIBRARY VARIABLE OVERRIDE: roboto-fontface
+$roboto-font-path:  '../../node_modules/roboto-fontface/fonts' !default;
+// EXTERNAL LIBRARY VARIABLE OVERRIDE: sass-rem
+$rem-baseline:      $html-font-size !default;
 
 // Buttons
 
