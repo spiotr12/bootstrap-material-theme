@@ -22,6 +22,9 @@
   &:disabled {
     color: $grey;
     background-color: transparent;
+    &:hover {
+      background-color: darken($body-bg, 5%);
+    }
   }
 
   &:not(:disabled):not(.disabled):active,
@@ -49,9 +52,15 @@
   border-color: $color;
 
   &:hover {
-    color: $color-hover;
-    background-color: $active-background;
+    $active-background-modified: null;
+    @if (detect-color-contrast($active-background) == 'dark') {
+      $active-background-modified: darken($active-background, $highlight-modifier-dark);
+    } @else {
+      $active-background-modified: lighten($active-background, $highlight-modifier-light);
+    }
+    color: color-yiq($active-background-modified);
     border-color: $active-border;
+    background-color: $active-background-modified;
   }
 
   &:focus,

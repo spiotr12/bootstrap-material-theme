@@ -27,6 +27,13 @@ $theme-colors: map-merge((
         "danger":     $red
 ), $theme-colors);
 
+// Color modifies
+
+$highlight-modifier:        5% !default;
+$highlight-modifier-light:  $highlight-modifier !default;
+$highlight-modifier-dark:   $highlight-modifier !default;
+
+
 // Font
 
 $html-font-size:    14px !default;

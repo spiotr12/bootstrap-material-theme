@@ -1,14 +1,14 @@
 // Color contrast
-//@function color-contrast-yiq($color, $modifier: (darken: 10%, lighten: 5%)) {
-//  $r: red($color);
-//  $g: green($color);
-//  $b: blue($color);
-//
-//  $yiq: (($r * 299) + ($g * 587) + ($b * 114)) / 1000;
-//
-//  @if ($yiq >= $yiq-contrasted-threshold) {
-//    @return darken($color, map-get($modifier, darken));
-//  } @else {
-//    @return lighten($color, map-get($modifier, lighten));
-//  }
-//}
+@function detect-color-contrast($color) {
+  $r: red($color);
+  $g: green($color);
+  $b: blue($color);
+
+  $yiq: (($r * 299) + ($g * 587) + ($b * 114)) / 1000;
+
+  @if ($yiq >= $yiq-contrasted-threshold) {
+    @return 'dark';
+  } @else {
+    @return 'light';
+  }
+}
