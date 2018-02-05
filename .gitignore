@@ -1,5 +1,5 @@
 # IntelliJ project files
 .idea/
-!.idea/runConfigurations
+!/.idea/runConfigurations/
 dist/
 node_modules/
