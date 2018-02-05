@@ -47,10 +47,14 @@ $highlight-modifier-dark:   $highlight-modifier !default;
 $input-btn-min-width:   rem(64px) !default;
 $btn-min-width:         $input-btn-min-width !default;
 
-$input-btn-margin-x:    rem(8px) !default;
-$btn-margin-x:          $input-btn-margin-x !default;
+$btn-margin-x:          rem(8px) !default;
+$input-btn-margin-x:    $btn-margin-x !default;
 
 // Form
+
+$input-padding-y:             rem(8px);
+$input-margin-top:            rem(16px);
+$label-font-size:             rem(12px);
 
 $form-control-bg-size:        0 100%, 100% 100% !default;
 $form-control-bg-size-active: 100% 100%, 100% 100% !default;

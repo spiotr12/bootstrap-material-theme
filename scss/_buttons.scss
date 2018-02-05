@@ -1,7 +1,7 @@
 .btn {
   text-transform: uppercase !important;
   min-width: $btn-min-width;
-  margin: 0 $btn-margin-x;
+  margin: 0 $input-btn-margin-x;
   &:not([class*=btn-outline]) {
     border: 0;
   }
