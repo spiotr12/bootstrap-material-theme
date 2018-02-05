@@ -14,7 +14,7 @@
   }
 
   @each $status in $statuses {
-    &:focus.has-#{$status},
+    &:focus.has-#{$status} &, // FIXME: input focus parent has-status
     .is-focused.has-#{$status} & {
       color: theme-color($status);
       @include form-control-underline(theme-color($status));
