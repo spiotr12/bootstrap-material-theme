@@ -14,7 +14,8 @@
   }
 
   @each $status in $statuses {
-    &.has-#{$status} {
+    &:focus.has-#{$status},
+    .is-focused.has-#{$status} & {
       color: theme-color($status);
       @include form-control-underline(theme-color($status));
     }
@@ -23,25 +24,32 @@
 
 .form-group {
   position: relative;
-  .label {
-    position: absolute;
-    @include label-static();
-    pointer-events: none;
-    transition: 0.3s ease all;
+}
 
-    color: $label-color;
+.label {
+  position: absolute;
+  @include label-static();
+  pointer-events: none;
+  transition: 0.3s ease all;
 
-    &.label-floating {
-      font-size: 1rem;
-      margin-top: 0;
-      top: $input-margin-top + $input-padding-y;
+  color: $label-color;
+
+  &.label-floating {
+    font-size: 1rem;
+    margin-top: 0;
+    top: $input-margin-top + $input-padding-y;
+
+    .is-focused & {
+      @include label-static();
+      color: theme-color(primary)
     }
   }
 
-  &.is-focused .label-floating {
-    @include label-static();
+  @each $status in $statuses {
+    .has-#{$status} &,
+    .is-focused.has-#{$status} & {
+      color: theme-color($status);
+    }
   }
-
 }
-
 
