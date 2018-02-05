@@ -322,8 +322,8 @@ $font-family-sans-serif:      'Roboto-Medium', 'Helvetica', 'Arial', sans-serif 
 //
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 
-$input-btn-padding-y:         .315rem !default;
-$input-btn-padding-x:         1rem !default;
+$input-btn-padding-y:         rem(7.5px) !default;
+$input-btn-padding-x:         rem(16px) !default;
 //$input-btn-line-height:       $line-height-base !default;
 
 $input-btn-focus-width:       .1rem !default;

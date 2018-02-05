@@ -3,6 +3,13 @@
 //
 // Variables
 
+// External libraries variables override
+
+// roboto-fontface
+$roboto-font-path:  '../../node_modules/roboto-fontface/fonts' !default;
+// sass-rem
+$rem-baseline:      $html-font-size !default;
+
 // Colors
 
 $blue:    $blue-500 !default;
@@ -36,17 +43,15 @@ $highlight-modifier-dark:   $highlight-modifier !default;
 
 // Font
 
-$html-font-size:    14px !default;
-// Roboto Fontrace path
-$roboto-font-path:      '../../node_modules/roboto-fontface/fonts' !default;
+$html-font-size:        14px !default;
 
 // Buttons
 
-$input-btn-min-width:         4rem !default;
-$btn-min-width: $input-btn-min-width !default;
+$input-btn-min-width:   4rem !default;
+$btn-min-width:         $input-btn-min-width !default;
 
-$input-btn-margin-x:          .5rem !default;
-$btn-margin-x: $input-btn-margin-x !default;
+$input-btn-margin-x:    .5rem !default;
+$btn-margin-x:          $input-btn-margin-x !default;
 
 // Form
 
