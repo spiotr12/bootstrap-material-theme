@@ -27,6 +27,13 @@ $theme-colors: map-merge((
         "danger":     $red
 ), $theme-colors);
 
+$statuses: (
+        "success",
+        "info",
+        "warning",
+        "danger"
+) !default;
+
 // Color modifies
 
 $highlight-modifier:        7.5% !default;

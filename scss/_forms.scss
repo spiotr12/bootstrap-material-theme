@@ -12,24 +12,11 @@
     transition-duration: 0.3s;
   }
 
-  &.has-success {
-    color: theme-color(success);
-    @include form-control-underline(theme-color(success));
-  }
-
-  &.has-info {
-    color: theme-color(info);
-    @include form-control-underline(theme-color(info));
-  }
-
-  &.has-warning {
-    color: theme-color(warning);
-    @include form-control-underline(theme-color(warning));
-  }
-
-  &.has-danger {
-    color: theme-color(danger);
-    @include form-control-underline(theme-color(danger));
+  @each $status in $statuses {
+    &.has-#{$status} {
+      color: theme-color($status);
+      @include form-control-underline(theme-color($status));
+    }
   }
 }
 
