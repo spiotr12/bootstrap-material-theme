@@ -1,35 +1,35 @@
 .form-control {
-  background: $bmd-form-control-bg-repeat-y $bmd-form-control-bg-position;
-  background-size: $bmt-form-control-bg-size;
+  background: no-repeat center bottom, center calc(100% - 1px);
+  background-size: $form-control-bg-size;
   padding: .575rem 0;
   transition: background 0s ease-out;
 
-  @include bmt-form-control-underline(theme-color(primary));
+  @include form-control-underline(theme-color(primary));
 
   &:focus,
   .is-focused & {
-    background-size: $bmt-form-control-bg-size-active;
+    background-size: $form-control-bg-size-active;
     transition-duration: 0.3s;
   }
 
   &.has-success {
     color: theme-color(success);
-    @include bmt-form-control-underline(theme-color(success));
+    @include form-control-underline(theme-color(success));
   }
 
   &.has-info {
     color: theme-color(info);
-    @include bmt-form-control-underline(theme-color(info));
+    @include form-control-underline(theme-color(info));
   }
 
   &.has-warning {
     color: theme-color(warning);
-    @include bmt-form-control-underline(theme-color(warning));
+    @include form-control-underline(theme-color(warning));
   }
 
   &.has-danger {
     color: theme-color(danger);
-    @include bmt-form-control-underline(theme-color(danger));
+    @include form-control-underline(theme-color(danger));
   }
 }
 

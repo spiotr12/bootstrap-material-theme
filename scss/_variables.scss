@@ -1,3 +1,8 @@
+// Bootstrap Material Theme
+// By Piotr Starzec starzec.piotr.12@gmail.com
+//
+// Variables
+
 // Colors
 
 $blue:    $blue-500 !default;
@@ -23,20 +28,20 @@ $theme-colors: map-merge((
 ), $theme-colors);
 
 // Font
-$bmt-html-font-size: 14px;
-$bmt-import-roboto-font: true !default;
+
+$html-font-size:    14px !default;
+// Roboto Fontrace path
+$roboto-font-path:      '../../node_modules/roboto-fontface/fonts' !default;
 
 // Buttons
 
-$bmt-input-btn-min-width:         4rem !default;
-$bmt-btn-min-width:               $bmt-input-btn-min-width !default;
+$input-btn-min-width:         4rem !default;
+$btn-min-width: $input-btn-min-width !default;
 
-$bmt-input-btn-margin-x:          .5rem !default;
-$bmt-btn-margin-x:                $bmt-input-btn-margin-x !default;
+$input-btn-margin-x:          .5rem !default;
+$btn-margin-x: $input-btn-margin-x !default;
 
 // Form
 
-$bmd-form-control-bg-repeat-y:    no-repeat !default;
-$bmd-form-control-bg-position:    center bottom, center calc(100% - 1px) !default;
-$bmt-form-control-bg-size:        0 100%, 100% 100% !default;
-$bmt-form-control-bg-size-active: 100% 100%, 100% 100% !default;
+$form-control-bg-size:        0 100%, 100% 100% !default;
+$form-control-bg-size-active: 100% 100%, 100% 100% !default;

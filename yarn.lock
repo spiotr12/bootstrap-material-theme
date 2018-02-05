@@ -632,7 +632,7 @@ map-obj@^1.0.0, map-obj@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/map-obj/-/map-obj-1.0.1.tgz#d933ceb9205d82bdcf4886f6742bdc2b4dea146d"
 
-material-colors@^1.2.5:
+material-colors@1.2.5:
   version "1.2.5"
   resolved "https://registry.yarnpkg.com/material-colors/-/material-colors-1.2.5.tgz#5292593e6754cb1bcc2b98030e4e0d6a3afc9ea1"
 
@@ -964,7 +964,7 @@ rimraf@2:
   dependencies:
     glob "^7.0.5"
 
-roboto-fontface@^0.8.0:
+roboto-fontface@0.8.0:
   version "0.8.0"
   resolved "https://registry.yarnpkg.com/roboto-fontface/-/roboto-fontface-0.8.0.tgz#031a83c8f79932801a57d83bf743f37250163499"
 

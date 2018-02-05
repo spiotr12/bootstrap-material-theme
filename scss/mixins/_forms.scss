@@ -1,4 +1,4 @@
-@mixin bmt-form-control-underline($color) {
+@mixin form-control-underline($color) {
   background-image: linear-gradient(
                   to top,
                   $color 2px,
