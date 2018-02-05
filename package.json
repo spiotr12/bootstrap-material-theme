@@ -6,7 +6,8 @@
   },
   "dependencies": {
     "bootstrap": "4.0.0",
-    "material-colors": "^1.2.5"
+    "material-colors": "1.2.5",
+    "roboto-fontface": "0.8.0"
   },
   "devDependencies": {
     "node-sass": "4.7.2",
