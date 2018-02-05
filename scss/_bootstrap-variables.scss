@@ -397,7 +397,7 @@ $input-bg:                              $body-bg !default;
 
 $input-color:                           $grey-900 !default;
 $input-border-color:                    $grey-500 !default;
-//$input-border-width:                    $input-btn-border-width !default;
+$input-border-width:                    0 !default; // $input-btn-border-width !default;
 $input-box-shadow:                      none !default;
 
 $input-border-radius:                   0 !default;
