@@ -1,7 +1,7 @@
 .form-control {
   background: no-repeat center bottom, center calc(100% - 1px);
   background-size: $form-control-bg-size;
-  padding: .575rem 0;
+  padding: rem(8px) 0;
   transition: background 0s ease-out;
 
   @include form-control-underline(theme-color(primary));
@@ -23,13 +23,18 @@
 .form-group {
   position: relative;
   .label {
-    position: absolute;
     pointer-events: none;
     transition: 0.3s ease all;
+    margin-top: rem(16px);
+    margin-bottom: 0;
+    font-size: rem(12px);
+    color: $label-color;
 
     // hint to browser for optimization
     &.label-floating {
-      will-change: left, top, contents; // TODO: evaluate effectiveness - looking for community feedback
+      position: absolute;
+      //will-change: left, top, contents; // TODO: evaluate effectiveness - looking for community feedback
+      //top: 8px;
     }
   }
 
