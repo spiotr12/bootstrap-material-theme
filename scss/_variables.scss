@@ -35,10 +35,10 @@ $highlight-modifier-dark:   $highlight-modifier !default;
 
 // Buttons
 
-$input-btn-min-width:   4rem !default;
+$input-btn-min-width:   rem(64px) !default;
 $btn-min-width:         $input-btn-min-width !default;
 
-$input-btn-margin-x:    8px !default;
+$input-btn-margin-x:    rem(8px) !default;
 $btn-margin-x:          $input-btn-margin-x !default;
 
 // Form
