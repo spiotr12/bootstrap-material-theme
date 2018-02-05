@@ -1,0 +1,7 @@
+// EXTERNAL LIBRARY VARIABLE OVERRIDE: roboto-fontface
+$roboto-font-path:  '../../node_modules/roboto-fontface/fonts' !default;
+@import "~roboto-fontface/css/roboto/sass/roboto-fontface";
+
+// EXTERNAL LIBRARY VARIABLE OVERRIDE: sass-rem
+$rem-baseline:      $html-font-size !default;
+@import "~sass-rem/rem";

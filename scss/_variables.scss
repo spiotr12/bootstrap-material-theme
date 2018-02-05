@@ -33,21 +33,12 @@ $highlight-modifier:        7.5% !default;
 $highlight-modifier-light:  $highlight-modifier !default;
 $highlight-modifier-dark:   $highlight-modifier !default;
 
-
-// Font
-
-$html-font-size:        14px !default;
-// EXTERNAL LIBRARY VARIABLE OVERRIDE: roboto-fontface
-$roboto-font-path:  '../../node_modules/roboto-fontface/fonts' !default;
-// EXTERNAL LIBRARY VARIABLE OVERRIDE: sass-rem
-$rem-baseline:      $html-font-size !default;
-
 // Buttons
 
 $input-btn-min-width:   4rem !default;
 $btn-min-width:         $input-btn-min-width !default;
 
-$input-btn-margin-x:    .5rem !default;
+$input-btn-margin-x:    8px !default;
 $btn-margin-x:          $input-btn-margin-x !default;
 
 // Form

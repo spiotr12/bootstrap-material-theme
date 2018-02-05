@@ -1,9 +1,9 @@
 // Bootstrap Material Theme
 // By Piotr Starzec starzec.piotr.12@gmail.com
-@import "~sass-rem/rem";
+@import "pre-variables";
+@import "external-libraries";
 @import "colors";
 @import "variables"; // Custom
-@import "font";
 @import "bootstrap-variables"; // Override
 // Bootstrap 4
 @import "~bootstrap/scss/functions";
