@@ -59,7 +59,11 @@ $label-static-font-size:             rem(12px);
 $form-control-bg-size:        0 100%, 100% 100% !default;
 $form-control-bg-size-active: 100% 100%, 100% 100% !default;
 
+$form-control-underline-size:               rem(1px) !default;
+$form-control-underline-size-active:        rem(2px) !default;
 $form-control-keep-underline-status-color:  true !default;
 $form-control-keep-input-status-color:      false !default;
 
-$label-keep-status-color:     true !default;
+$label-keep-status-color:                       true !default;
+$form-text-keep-status-color:                   true !default;
+$form-text-keep-status-color-negative-only:     true !default;

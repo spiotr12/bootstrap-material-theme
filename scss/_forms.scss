@@ -1,3 +1,7 @@
+.form-group {
+  position: relative; // For floating labels
+}
+
 .form-control {
   margin-top: $input-margin-top;
   background: no-repeat center bottom, center calc(100% - 1px);
@@ -45,10 +49,6 @@
   }
 }
 
-.form-group {
-  position: relative;
-}
-
 .label {
   position: absolute;
   @include label-static();
@@ -57,7 +57,6 @@
 
   color: $label-color;
 
-  // FIXME: label-floating too low above input text
   &.label-floating {
     font-size: 1rem;
     margin-top: 0;
@@ -84,6 +83,32 @@
       .has-#{$status}.is-filled & {
         color: theme-color($status);
       }
+    }
+  }
+}
+
+.form-text {
+  color: $grey;
+
+  @each $status in $statuses {
+    .has-#{$status}.is-focused &,
+    .has-#{$status}.is-filled.is-focused & {
+      color: theme-color($status);
+    }
+
+    @if ($form-text-keep-status-color-negative-only == false and $form-text-keep-status-color == true) {
+      .has-#{$status}.is-filled & {
+        color: theme-color($status);
+      }
+    }
+  }
+
+  @if ($form-text-keep-status-color-negative-only == true) {
+    .has-warning.is-filled & {
+      color: theme-color(warning);
+    }
+    .has-danger.is-filled & {
+      color: theme-color(danger);
     }
   }
 }
