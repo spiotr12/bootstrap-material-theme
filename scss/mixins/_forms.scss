@@ -12,7 +12,8 @@
 }
 
 @mixin label-static {
-  top: $input-margin-top - $input-padding-y;
+  top: 0;
   font-size: $label-font-size;
+  margin-top: $input-margin-top;
   margin-bottom: 0;
 }

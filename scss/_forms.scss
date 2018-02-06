@@ -1,5 +1,5 @@
 .form-control {
-  margin-top: $input-margin-top;
+  margin-top: $input-margin-top * 2;
   background: no-repeat center bottom, center calc(100% - 1px);
   background-size: $form-control-bg-size;
   padding: $input-padding-y 0;
@@ -34,11 +34,11 @@
 
   color: $label-color;
 
-  // FIXME: label-floating too low above input text
+  // FIXME: either form-control margin-bottom 0 or input margin-top 16 * 2
   &.label-floating {
     font-size: 1rem;
     margin-top: 0;
-    top: $input-margin-top + $input-padding-y;
+    top: $input-margin-top * 2 + $input-padding-y;
 
     .is-focused &,
     .is-filled & {
