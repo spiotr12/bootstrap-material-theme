@@ -2,5 +2,5 @@
 .idea/*
 !.idea/runConfigurations/
 !.idea/jsLibraryMappings.xml
-dist/
+#dist/
 node_modules/
