@@ -34,13 +34,18 @@
 
   color: $label-color;
 
+  // FIXME: label-floating too low above input text
   &.label-floating {
     font-size: 1rem;
     margin-top: 0;
     top: $input-margin-top + $input-padding-y;
 
-    .is-focused & {
+    .is-focused &,
+    .is-filled & {
       @include label-static();
+    }
+
+    .is-focused & {
       color: theme-color(primary)
     }
   }
