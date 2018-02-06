@@ -3,9 +3,9 @@
   background: no-repeat center bottom, center calc(100% - 1px);
   background-size: $form-control-bg-size;
   padding: $input-padding-y 0;
-  transition: background 0s ease-out;
+  //transition: background 0s ease-out;
 
-  @include form-control-underline(theme-color(primary));
+  @include form-control-underline-bg-image(theme-color(primary));
 
   &:focus,
   .is-focused & {
@@ -14,10 +14,30 @@
   }
 
   @each $status in $statuses {
-    .has-#{$status} &:focus,
-    .is-focused.has-#{$status}:not(.is-filled) & {
-      color: theme-color($status);
-      @include form-control-underline(theme-color($status));
+
+    // Text color
+
+    @if ($form-control-keep-input-status-color == true) {
+      .has-#{$status} & {
+        color: theme-color($status);
+      }
+    }
+
+    // Underline
+
+    @if ($form-control-keep-underline-status-color == true) {
+      .has-#{$status}.is-filled & /* keep status color when input is filled*/
+      {
+        background-size: $form-control-bg-size-active;
+        @include form-control-underline-bg-image(theme-color($status));
+      }
+    }
+
+    .has-#{$status}.is-focused &, /* show status color when input is focused */
+    .has-#{$status}.keep-underline & /* keep status color when input is empty */
+    {
+      background-size: $form-control-bg-size-active;
+      @include form-control-underline-bg-image(theme-color($status));
     }
   }
 
@@ -52,15 +72,15 @@
     }
 
     .is-focused & {
-      color: theme-color(primary)
+      color: theme-color(primary);
     }
   }
 
   @each $status in $statuses {
-    .has-#{$status} &,
-    .is-focused.has-#{$status} & {
-      color: theme-color($status);
-    }
+    //.has-#{$status} &,
+    //.is-filled.is-focused.has-#{$status} & {
+    //  color: theme-color($status);
+    //}
   }
 }
 
