@@ -3,11 +3,12 @@
 }
 
 .form-control {
-  margin-top: $input-margin-top;
+  margin-top: $input-margin-top;  // For label
+  margin-bottom: $form-text-margin-top + .8rem;  // For form-text
   background: no-repeat center bottom, center calc(100% - 1px);
   background-size: $form-control-bg-size;
   padding: $input-padding-y 0;
-  //transition: background 0s ease-out;
+  transition: background 0s ease-out;
 
   @include form-control-underline-bg-image(theme-color(primary));
 
@@ -88,6 +89,9 @@
 }
 
 .form-text {
+  position: absolute;
+  bottom: 0;
+  margin-top: 0;
   color: $grey;
 
   @each $status in $statuses {
