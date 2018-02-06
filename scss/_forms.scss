@@ -14,11 +14,17 @@
   }
 
   @each $status in $statuses {
-    &:focus.has-#{$status} &, // FIXME: input focus parent has-status
-    .is-focused.has-#{$status} & {
+    .has-#{$status} &:focus,
+    .is-focused.has-#{$status}:not(.is-filled) & {
       color: theme-color($status);
       @include form-control-underline(theme-color($status));
     }
+  }
+
+  // Exclusions
+
+  .form-inline & {
+    margin-top: 0;
   }
 }
 
