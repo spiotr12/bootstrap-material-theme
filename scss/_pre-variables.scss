@@ -3,3 +3,12 @@
 
 // Font
 $html-font-size:    14px !default;
+
+// EXTERNAL LIBRARY VARIABLE OVERRIDE: roboto-fontface
+$roboto-font-path:  '../../node_modules/roboto-fontface/fonts' !default;
+
+// EXTERNAL LIBRARY VARIABLE OVERRIDE: sass-rem
+$rem-baseline:      $html-font-size !default;
+
+// EXTERNAL LIBRARY VARIABLE OVERRIDE: mdi (material-design-icons)
+$mdi-font-path:     '../../node_modules/mdi/fonts' !default;

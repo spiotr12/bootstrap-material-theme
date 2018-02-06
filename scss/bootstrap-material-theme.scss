@@ -1,7 +1,10 @@
 // Bootstrap Material Theme
 // By Piotr Starzec starzec.piotr.12@gmail.com
 @import "pre-variables";
-@import "external-libraries";
+// external lib
+@import "~roboto-fontface/css/roboto/sass/roboto-fontface";
+@import "~sass-rem/rem";
+//
 @import "material-colors";
 @import "variables"; // Custom
 @import "bootstrap-variables"; // Override
@@ -9,6 +12,9 @@
 @import "~bootstrap/scss/functions";
 @import "functions";  // Bootstrap Material Theme
 @import "~bootstrap/scss/variables";
+// external lib
+@import "~mdi/scss/materialdesignicons";
+// Bootstrap 4 continued
 @import "mixins"; // Bootstrap 4 & Override
 @import "~bootstrap/scss/root";
 @import "~bootstrap/scss/reboot";
