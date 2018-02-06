@@ -16,7 +16,6 @@
   @each $status in $statuses {
 
     // Text color
-
     @if ($form-control-keep-input-status-color == true) {
       .has-#{$status} & {
         color: theme-color($status);
@@ -24,20 +23,18 @@
     }
 
     // Underline
-
+    .has-#{$status}.is-focused &, /* show status color when input is focused */
+    .has-#{$status}.keep-underline & /* keep status color when input is empty */
+    {
+      background-size: $form-control-bg-size-active;
+      @include form-control-underline-bg-image(theme-color($status));
+    }
     @if ($form-control-keep-underline-status-color == true) {
       .has-#{$status}.is-filled & /* keep status color when input is filled*/
       {
         background-size: $form-control-bg-size-active;
         @include form-control-underline-bg-image(theme-color($status));
       }
-    }
-
-    .has-#{$status}.is-focused &, /* show status color when input is focused */
-    .has-#{$status}.keep-underline & /* keep status color when input is empty */
-    {
-      background-size: $form-control-bg-size-active;
-      @include form-control-underline-bg-image(theme-color($status));
     }
   }
 
@@ -76,11 +73,18 @@
     }
   }
 
+  // Label color
   @each $status in $statuses {
-    //.has-#{$status} &,
-    //.is-filled.is-focused.has-#{$status} & {
-    //  color: theme-color($status);
-    //}
+    .has-#{$status}.is-focused &,
+    .has-#{$status}.is-filled.is-focused & {
+      color: theme-color($status);
+    }
+
+    @if ($label-keep-status-color == true) {
+      .has-#{$status}.is-filled & {
+        color: theme-color($status);
+      }
+    }
   }
 }
 

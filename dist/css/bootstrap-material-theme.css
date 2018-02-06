@@ -1757,32 +1757,32 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   .is-focused .form-control {
     background-size: 100% 100%, 100% 100%;
     transition-duration: 0.3s; }
-  .has-success.is-filled .form-control {
-    background-size: 100% 100%, 100% 100%;
-    background-image: linear-gradient(to top, #4caf50 2px, rgba(76, 175, 80, 0) 2px), linear-gradient(to top, #9e9e9e 1px, rgba(158, 158, 158, 0) 1px); }
   .has-success.is-focused .form-control,
   .has-success.keep-underline .form-control {
     background-size: 100% 100%, 100% 100%;
     background-image: linear-gradient(to top, #4caf50 2px, rgba(76, 175, 80, 0) 2px), linear-gradient(to top, #9e9e9e 1px, rgba(158, 158, 158, 0) 1px); }
-  .has-info.is-filled .form-control {
+  .has-success.is-filled .form-control {
     background-size: 100% 100%, 100% 100%;
-    background-image: linear-gradient(to top, #00bcd4 2px, rgba(0, 188, 212, 0) 2px), linear-gradient(to top, #9e9e9e 1px, rgba(158, 158, 158, 0) 1px); }
+    background-image: linear-gradient(to top, #4caf50 2px, rgba(76, 175, 80, 0) 2px), linear-gradient(to top, #9e9e9e 1px, rgba(158, 158, 158, 0) 1px); }
   .has-info.is-focused .form-control,
   .has-info.keep-underline .form-control {
     background-size: 100% 100%, 100% 100%;
     background-image: linear-gradient(to top, #00bcd4 2px, rgba(0, 188, 212, 0) 2px), linear-gradient(to top, #9e9e9e 1px, rgba(158, 158, 158, 0) 1px); }
-  .has-warning.is-filled .form-control {
+  .has-info.is-filled .form-control {
     background-size: 100% 100%, 100% 100%;
-    background-image: linear-gradient(to top, #ff9800 2px, rgba(255, 152, 0, 0) 2px), linear-gradient(to top, #9e9e9e 1px, rgba(158, 158, 158, 0) 1px); }
+    background-image: linear-gradient(to top, #00bcd4 2px, rgba(0, 188, 212, 0) 2px), linear-gradient(to top, #9e9e9e 1px, rgba(158, 158, 158, 0) 1px); }
   .has-warning.is-focused .form-control,
   .has-warning.keep-underline .form-control {
     background-size: 100% 100%, 100% 100%;
     background-image: linear-gradient(to top, #ff9800 2px, rgba(255, 152, 0, 0) 2px), linear-gradient(to top, #9e9e9e 1px, rgba(158, 158, 158, 0) 1px); }
-  .has-danger.is-filled .form-control {
+  .has-warning.is-filled .form-control {
     background-size: 100% 100%, 100% 100%;
-    background-image: linear-gradient(to top, #f44336 2px, rgba(244, 67, 54, 0) 2px), linear-gradient(to top, #9e9e9e 1px, rgba(158, 158, 158, 0) 1px); }
+    background-image: linear-gradient(to top, #ff9800 2px, rgba(255, 152, 0, 0) 2px), linear-gradient(to top, #9e9e9e 1px, rgba(158, 158, 158, 0) 1px); }
   .has-danger.is-focused .form-control,
   .has-danger.keep-underline .form-control {
+    background-size: 100% 100%, 100% 100%;
+    background-image: linear-gradient(to top, #f44336 2px, rgba(244, 67, 54, 0) 2px), linear-gradient(to top, #9e9e9e 1px, rgba(158, 158, 158, 0) 1px); }
+  .has-danger.is-filled .form-control {
     background-size: 100% 100%, 100% 100%;
     background-image: linear-gradient(to top, #f44336 2px, rgba(244, 67, 54, 0) 2px), linear-gradient(to top, #9e9e9e 1px, rgba(158, 158, 158, 0) 1px); }
   .form-inline .form-control {
@@ -1810,6 +1810,26 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
       margin-bottom: 0; }
     .is-focused .label.label-floating {
       color: #009688; }
+  .has-success.is-focused .label,
+  .has-success.is-filled.is-focused .label {
+    color: #4caf50; }
+  .has-success.is-filled .label {
+    color: #4caf50; }
+  .has-info.is-focused .label,
+  .has-info.is-filled.is-focused .label {
+    color: #00bcd4; }
+  .has-info.is-filled .label {
+    color: #00bcd4; }
+  .has-warning.is-focused .label,
+  .has-warning.is-filled.is-focused .label {
+    color: #ff9800; }
+  .has-warning.is-filled .label {
+    color: #ff9800; }
+  .has-danger.is-focused .label,
+  .has-danger.is-filled.is-focused .label {
+    color: #f44336; }
+  .has-danger.is-filled .label {
+    color: #f44336; }
 
 .btn {
   display: inline-block;

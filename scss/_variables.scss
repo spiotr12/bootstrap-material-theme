@@ -54,10 +54,12 @@ $input-btn-margin-x:    $btn-margin-x !default;
 
 $input-padding-y:             rem(8px);
 $input-margin-top:            rem(16px);
-$label-font-size:             rem(12px);
+$label-static-font-size:             rem(12px);
 
 $form-control-bg-size:        0 100%, 100% 100% !default;
 $form-control-bg-size-active: 100% 100%, 100% 100% !default;
 
 $form-control-keep-underline-status-color:  true !default;
 $form-control-keep-input-status-color:      false !default;
+
+$label-keep-status-color:     true !default;
