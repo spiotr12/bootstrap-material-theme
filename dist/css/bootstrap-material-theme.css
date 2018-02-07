@@ -2780,8 +2780,8 @@ tbody.collapse.show {
   z-index: 1000;
   display: none;
   float: left;
-  min-width: 10rem;
-  padding: 0.5rem 0;
+  min-width: 8rem;
+  padding: 0.57143rem 0;
   margin: 0.125rem 0 0;
   font-size: 1rem;
   color: #212121;
@@ -2789,7 +2789,7 @@ tbody.collapse.show {
   list-style: none;
   background-color: #ffffff;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 0 solid rgba(0, 0, 0, 0.15);
   border-radius: 0.14286rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175); }
 
@@ -2874,7 +2874,7 @@ tbody.collapse.show {
 .dropdown-item {
   display: block;
   width: 100%;
-  padding: 0.25rem 1.5rem;
+  padding: 0 1.14286rem;
   clear: both;
   font-weight: 400;
   color: #212121;
@@ -2899,11 +2899,14 @@ tbody.collapse.show {
 
 .dropdown-header {
   display: block;
-  padding: 0.5rem 1.5rem;
+  padding: 0.57143rem 1.14286rem;
   margin-bottom: 0;
   font-size: 0.875rem;
   color: #757575;
   white-space: nowrap; }
+
+.dropdown-menu .dropdown-item {
+  line-height: 48px; }
 
 .btn-group,
 .btn-group-vertical {
