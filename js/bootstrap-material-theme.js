@@ -22,11 +22,11 @@ $(document).ready(function () {
         })
         // form-control filled
         .keyup(function () {
-            // const value = $(this).val();
-            // if (value) {
-            //     $(this).parent('.form-group').addClass('is-filled');
-            // } else {
-            //     $(this).parent('.form-group').removeClass('is-filled');
-            // }
+            const value = $(this).val();
+            if (value) {
+                $(this).parent('.form-group').addClass('is-filled');
+            } else {
+                $(this).parent('.form-group').removeClass('is-filled');
+            }
         });
 });
