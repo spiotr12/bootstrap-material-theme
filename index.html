@@ -42,7 +42,7 @@
 
 <div class="container">
   <div class="row mt-3">
-    <fieldset class="col-12">
+    <div class="col-12">
 
       <!--Body text-->
       <h4>Body text</h4>
@@ -388,16 +388,30 @@
           <input type="checkbox" class="custom-control-input" id="customCheck1">
           <label class="custom-control-label" for="customCheck1">Custom check</label>
         </div>
+
         <div class="custom-control custom-radio">
           <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
           <label class="custom-control-label" for="customRadio1">Custom radio</label>
         </div>
-        <select class="custom-select">
-          <option selected>Custom select menu</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
-        </select>
+      </div>
+
+      <div class="mt-2">
+        <fieldset class="form-group">
+          <input type="checkbox" class="checkbox">
+          <label class="checkbox-label">BMD - Custom check</label>
+        </fieldset>
+
+      </div>
+      <div class="mt-2">
+        <fieldset class="form-group">
+          <label class="label label-floating">Select a value</label>
+          <select class="custom-select">
+            <option selected>Custom select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </fieldset>
       </div>
 
       <div class="mt-2">
@@ -475,169 +489,164 @@
 
       </div>
 
-
-  </div>
-
-  <div class="col-12">
-
-    <!--Alerts-->
-    <div class="mb-2 alert alert-primary" role="alert">
-      This is a primary alert with <a href="#" class="alert-link">an example link</a>.
-    </div>
-    <div class="mb-2 alert alert-secondary" role="alert">
-      This is a secondary alert with <a href="#" class="alert-link">an example link</a>.
-    </div>
-    <div class="mb-2 alert alert-success" role="alert">
-      This is a success alert with <a href="#" class="alert-link">an example link</a>.
-    </div>
-    <div class="mb-2 alert alert-danger" role="alert">
-      This is a danger alert with <a href="#" class="alert-link">an example link</a>.
-    </div>
-    <div class="mb-2 alert alert-warning" role="alert">
-      This is a warning alert with <a href="#" class="alert-link">an example link</a>.
-    </div>
-    <div class="mb-2 alert alert-info" role="alert">
-      This is a info alert with <a href="#" class="alert-link">an example link</a>.
-    </div>
-    <div class="mb-2 alert alert-light" role="alert">
-      This is a light alert with <a href="#" class="alert-link">an example link</a>.
-    </div>
-    <div class="mb-2 alert alert-dark" role="alert">
-      This is a dark alert with <a href="#" class="alert-link">an example link</a>.
-    </div>
-
-
-    <div class="mt-2">
-      <ul class="list-group">
-        <li class="list-group-item list-group-item-primary">Dapibus ac facilisis in</li>
-        <li class="list-group-item list-group-item-secondary">Cras justo odio</li>
-        <li class="list-group-item list-group-item-success">Dapibus ac facilisis in</li>
-        <li class="list-group-item list-group-item-danger">Porta ac consectetur ac</li>
-        <li class="list-group-item list-group-item-warning">Vestibulum at eros</li>
-        <li class="list-group-item list-group-item-info">Cras justo odio</li>
-        <li class="list-group-item list-group-item-light">Dapibus ac facilisis in</li>
-        <li class="list-group-item list-group-item-dark">Porta ac consectetur ac</li>
-      </ul>
-
-
-    </div>
-  </div>
-
-  <!--Progress-->
-  <div class="col-12 mt-lg-0 mt-4">
-    <div class="card text-white bg-primary mb-2 d-inline-block" style="max-width: 18rem;">
-      <div class="card-header">Header</div>
-      <div class="card-body">
-        <h4 class="card-title">Primary card title</h4>
-        <p class="card-text">Some quick example text to build on the card title and make up the
-          bulk of the card's content.</p>
+      <!--Alerts-->
+      <div class="mb-2 alert alert-primary" role="alert">
+        This is a primary alert with <a href="#" class="alert-link">an example link</a>.
       </div>
-    </div>
-    <div class="card text-white bg-secondary mb-2 d-inline-block" style="max-width: 18rem;">
-      <div class="card-header">Header</div>
-      <div class="card-body">
-        <h4 class="card-title">Secondary card title</h4>
-        <p class="card-text">Some quick example text to build on the card title and make up the
-          bulk of the card's content.</p>
+      <div class="mb-2 alert alert-secondary" role="alert">
+        This is a secondary alert with <a href="#" class="alert-link">an example link</a>.
       </div>
-    </div>
-    <div class="card text-white bg-success mb-2 d-inline-block" style="max-width: 18rem;">
-      <div class="card-header">Header</div>
-      <div class="card-body">
-        <h4 class="card-title">Success card title</h4>
-        <p class="card-text">Some quick example text to build on the card title and make up the
-          bulk of the card's content.</p>
+      <div class="mb-2 alert alert-success" role="alert">
+        This is a success alert with <a href="#" class="alert-link">an example link</a>.
       </div>
-    </div>
-    <div class="card text-white bg-danger mb-2 d-inline-block" style="max-width: 18rem;">
-      <div class="card-header">Header</div>
-      <div class="card-body">
-        <h4 class="card-title">Danger card title</h4>
-        <p class="card-text">Some quick example text to build on the card title and make up the
-          bulk of the card's content.</p>
+      <div class="mb-2 alert alert-danger" role="alert">
+        This is a danger alert with <a href="#" class="alert-link">an example link</a>.
       </div>
-    </div>
-    <div class="card text-white bg-warning mb-2 d-inline-block" style="max-width: 18rem;">
-      <div class="card-header">Header</div>
-      <div class="card-body">
-        <h4 class="card-title">Warning card title</h4>
-        <p class="card-text">Some quick example text to build on the card title and make up the
-          bulk of the card's content.</p>
+      <div class="mb-2 alert alert-warning" role="alert">
+        This is a warning alert with <a href="#" class="alert-link">an example link</a>.
       </div>
-    </div>
-    <div class="card text-white bg-info mb-2 d-inline-block" style="max-width: 18rem;">
-      <div class="card-header">Header</div>
-      <div class="card-body">
-        <h4 class="card-title">Info card title</h4>
-        <p class="card-text">Some quick example text to build on the card title and make up the
-          bulk of the card's content.</p>
+      <div class="mb-2 alert alert-info" role="alert">
+        This is a info alert with <a href="#" class="alert-link">an example link</a>.
       </div>
-    </div>
-    <div class="card bg-light mb-2 d-inline-block" style="max-width: 18rem;">
-      <div class="card-header">Header</div>
-      <div class="card-body">
-        <h4 class="card-title">Light card title</h4>
-        <p class="card-text">Some quick example text to build on the card title and make up the
-          bulk of the card's content.</p>
+      <div class="mb-2 alert alert-light" role="alert">
+        This is a light alert with <a href="#" class="alert-link">an example link</a>.
       </div>
-    </div>
-    <div class="card text-white bg-dark mb-2 d-inline-block" style="max-width: 18rem;">
-      <div class="card-header">Header</div>
-      <div class="card-body">
-        <h4 class="card-title">Dark card title</h4>
-        <p class="card-text">Some quick example text to build on the card title and make up the
-          bulk of the card's content.</p>
+      <div class="mb-2 alert alert-dark" role="alert">
+        This is a dark alert with <a href="#" class="alert-link">an example link</a>.
+      </div>
+
+
+      <div class="mt-2">
+        <ul class="list-group">
+          <li class="list-group-item list-group-item-primary">Dapibus ac facilisis in</li>
+          <li class="list-group-item list-group-item-secondary">Cras justo odio</li>
+          <li class="list-group-item list-group-item-success">Dapibus ac facilisis in</li>
+          <li class="list-group-item list-group-item-danger">Porta ac consectetur ac</li>
+          <li class="list-group-item list-group-item-warning">Vestibulum at eros</li>
+          <li class="list-group-item list-group-item-info">Cras justo odio</li>
+          <li class="list-group-item list-group-item-light">Dapibus ac facilisis in</li>
+          <li class="list-group-item list-group-item-dark">Porta ac consectetur ac</li>
+        </ul>
+
+
       </div>
     </div>
 
+    <!--Progress-->
+    <div class="col-12 mt-lg-0 mt-4">
+      <div class="card text-white bg-primary mb-2 d-inline-block" style="max-width: 18rem;">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <h4 class="card-title">Primary card title</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the
+            bulk of the card's content.</p>
+        </div>
+      </div>
+      <div class="card text-white bg-secondary mb-2 d-inline-block" style="max-width: 18rem;">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <h4 class="card-title">Secondary card title</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the
+            bulk of the card's content.</p>
+        </div>
+      </div>
+      <div class="card text-white bg-success mb-2 d-inline-block" style="max-width: 18rem;">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <h4 class="card-title">Success card title</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the
+            bulk of the card's content.</p>
+        </div>
+      </div>
+      <div class="card text-white bg-danger mb-2 d-inline-block" style="max-width: 18rem;">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <h4 class="card-title">Danger card title</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the
+            bulk of the card's content.</p>
+        </div>
+      </div>
+      <div class="card text-white bg-warning mb-2 d-inline-block" style="max-width: 18rem;">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <h4 class="card-title">Warning card title</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the
+            bulk of the card's content.</p>
+        </div>
+      </div>
+      <div class="card text-white bg-info mb-2 d-inline-block" style="max-width: 18rem;">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <h4 class="card-title">Info card title</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the
+            bulk of the card's content.</p>
+        </div>
+      </div>
+      <div class="card bg-light mb-2 d-inline-block" style="max-width: 18rem;">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <h4 class="card-title">Light card title</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the
+            bulk of the card's content.</p>
+        </div>
+      </div>
+      <div class="card text-white bg-dark mb-2 d-inline-block" style="max-width: 18rem;">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <h4 class="card-title">Dark card title</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the
+            bulk of the card's content.</p>
+        </div>
+      </div>
 
-    <div>
 
-      <table class="table table-hover table-striped table-">
-        <thead class="thead-dark">
-        <tr>
-          <th>#</th>
-          <th>Column</th>
-          <th>Column</th>
-          <th>Column</th>
-          <th>Column</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td class="table-primary">Content</td>
-          <td class="table-secondary">Content</td>
-          <td class="table-success">Content</td>
-          <td class="table-danger">Content</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td class="table-warning">Content</td>
-          <td class="table-info">Content</td>
-          <td class="table-light">Content</td>
-          <td class="table-dark">Content</td>
-        </tr>
+      <div>
 
-        <tr>
-          <th scope="row">1</th>
-          <td class="bg-primary">Content</td>
-          <td class="bg-secondary">Content</td>
-          <td class="bg-success">Content</td>
-          <td class="bg-danger">Content</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td class="bg-warning">Content</td>
-          <td class="bg-info">Content</td>
-          <td class="bg-light">Content</td>
-          <td class="bg-dark">Content</td>
-        </tr>
-        </tbody>
-      </table>
+        <table class="table table-hover table-striped table-">
+          <thead class="thead-dark">
+          <tr>
+            <th>#</th>
+            <th>Column</th>
+            <th>Column</th>
+            <th>Column</th>
+            <th>Column</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td class="table-primary">Content</td>
+            <td class="table-secondary">Content</td>
+            <td class="table-success">Content</td>
+            <td class="table-danger">Content</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td class="table-warning">Content</td>
+            <td class="table-info">Content</td>
+            <td class="table-light">Content</td>
+            <td class="table-dark">Content</td>
+          </tr>
+
+          <tr>
+            <th scope="row">1</th>
+            <td class="bg-primary">Content</td>
+            <td class="bg-secondary">Content</td>
+            <td class="bg-success">Content</td>
+            <td class="bg-danger">Content</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td class="bg-warning">Content</td>
+            <td class="bg-info">Content</td>
+            <td class="bg-light">Content</td>
+            <td class="bg-dark">Content</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
-</div>
 </div>
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
