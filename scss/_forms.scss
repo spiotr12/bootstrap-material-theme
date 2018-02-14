@@ -51,6 +51,18 @@
     margin-top: 0;
     margin-bottom: 0;
   }
+
+  .navbar & {
+    background-color: inherit;
+  }
+
+  .navbar.navbar-dark & {
+    @include form-control-underline-bg-image($yiq-text-light, $yiq-text-light);
+    color: $yiq-text-light;
+    &::placeholder {
+      color: $grey-300;
+    }
+  }
 }
 
 //select.form-control {

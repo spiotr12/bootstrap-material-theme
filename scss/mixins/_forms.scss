@@ -1,4 +1,4 @@
-@mixin form-control-underline-bg-image($color) {
+@mixin form-control-underline-bg-image($color, $base-color: $input-border-color) {
   background-image: linear-gradient(
                   to top,
                   $color $form-control-underline-size-active,
@@ -6,8 +6,8 @@
   ),
   linear-gradient(
                   to top,
-                  $input-border-color $form-control-underline-size,
-                  fade-out($input-border-color, 1) $form-control-underline-size
+                  $base-color $form-control-underline-size,
+                  fade-out($base-color, 1) $form-control-underline-size
   );
 }
 

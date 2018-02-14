@@ -1793,6 +1793,13 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   .form-inline .form-control {
     margin-top: 0;
     margin-bottom: 0; }
+  .navbar .form-control {
+    background-color: inherit; }
+  .navbar.navbar-dark .form-control {
+    background-image: linear-gradient(to top, #ffffff 0.14286rem, rgba(255, 255, 255, 0) 0.14286rem), linear-gradient(to top, #ffffff 0.07143rem, rgba(255, 255, 255, 0) 0.07143rem);
+    color: #ffffff; }
+    .navbar.navbar-dark .form-control::placeholder {
+      color: #e0e0e0; }
 
 .label {
   position: absolute;
