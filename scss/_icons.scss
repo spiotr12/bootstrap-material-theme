@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'bmt-material-icons';
+  src: url($bmt-material-icons-font-path + '/bmt-material-icons.eot?aphcih');
+  src: url($bmt-material-icons-font-path + '/bmt-material-icons.eot?aphcih#iefix') format('embedded-opentype'),
+  url($bmt-material-icons-font-path + '/bmt-material-icons.ttf?aphcih') format('truetype'),
+  url($bmt-material-icons-font-path + '/bmt-material-icons.woff?aphcih') format('woff'),
+  url($bmt-material-icons-font-path + '/bmt-material-icons.svg?aphcih#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="bmt-icon-"], [class*=" bmt-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'bmt-material-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bmt-icon-arrow_drop_down:before {
+  content: "\e5c5";
+}
+
+.bmt-icon-arrow_drop_up:before {
+  content: "\e5c7";
+}
+
+.bmt-icon-check_box:before {
+  content: "\e834";
+}
+
+.bmt-icon-check_box_outline_blank:before {
+  content: "\e835";
+}

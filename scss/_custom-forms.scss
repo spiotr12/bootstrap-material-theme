@@ -2,7 +2,7 @@
 
 .custom-checkbox {
   .custom-control-label::before {
-    //@include border-radius($custom-checkbox-indicator-border-radius);
+    @include border-radius($custom-checkbox-indicator-border-radius);
   }
 
   .custom-control-input:checked ~ .custom-control-label {
