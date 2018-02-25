@@ -428,9 +428,9 @@ $input-border-radius:                   0 !default;
 
 $form-text-margin-top:                  rem(8px) !default; // .25rem !default;
 
-//$form-check-input-gutter:               1.25rem !default;
-//$form-check-input-margin-y:             .3rem !default;
-//$form-check-input-margin-x:             .25rem !default;
+$form-check-input-gutter:               1.5rem !default; // 1.25rem !default;
+$form-check-input-margin-y:             0 !default; // .3rem !default;
+//$form-check-input-margin-x:             .25rem !default; // .25rem !default;
 
 //$form-check-inline-margin-x:            .75rem !default;
 //$form-check-inline-input-margin-x:      .3125rem !default;

@@ -149,16 +149,33 @@
   //padding-left: $form-check-input-gutter;
 }
 
-.form-check-input {
-  //position: absolute;
-  //margin-top: $form-check-input-margin-y;
-  //margin-left: -$form-check-input-gutter;
+input[type=checkbox].form-check-input {
+  color: inherit;
+  position: absolute;
+  font-size: $checkbox-icon-font-size;
+  height: $checkbox-icon-height;
+  line-height: $checkbox-icon-height;
+  margin-top: $form-check-input-margin-y;
+  margin-left: -$form-check-input-gutter;
   @include appearance(none);
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/check_radio_sheet.png) left top no-repeat;
-  content: "\e835";
+
+  &:focus {
+    outline-style: none;
+  }
+
+  &:before {
+    font-family: $bmt-material-icons-font-family-name;
+    content: map-get($bmt-icons, check-box-outline-blank);
+  }
+
+  &:checked:before {
+    font-family: $bmt-material-icons-font-family-name;
+    content: map-get($bmt-icons, check-box);
+    color: theme-color(primary);
+  }
 
   &:checked ~ .form-check-label {
-    color: red; // TODO: Remove
+
   }
 }
 

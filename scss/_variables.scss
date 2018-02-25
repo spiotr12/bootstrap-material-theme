@@ -45,6 +45,9 @@ $highlight-modifier-dark:   $highlight-modifier !default;
 // Icons
 
 $bmt-material-icons-font-path:    '../../fonts' !default;
+$bmt-material-icons-file-name: 'icomoon';
+$bmt-material-icons-font-family-name: 'bmt-icons';
+$bmt-material-icons-class-prefix: 'bmt-icon';
 
 // Buttons
 
@@ -71,6 +74,9 @@ $form-control-keep-input-status-color:      false !default;
 $label-keep-status-color:                   true !default;
 $form-text-keep-status-color:               true !default;
 $form-text-keep-status-color-negative-only: true !default;
+
+$checkbox-icon-font-size:                   1.5em !default;
+$checkbox-icon-height:                      1em !default;
 
 // Dropdown
 
