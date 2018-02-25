@@ -149,7 +149,7 @@
   //padding-left: $form-check-input-gutter;
 }
 
-input[type=checkbox].form-check-input {
+.form-check-input {
   color: inherit;
   font-size: $checkbox-icon-font-size;
   height: $checkbox-icon-height;
@@ -160,38 +160,33 @@ input[type=checkbox].form-check-input {
     outline-style: none;
   }
 
-  &:before {
+  &:before,
+  &:checked:before {
     font-family: $bmt-material-icons-font-family-name;
+  }
+
+  &:checked:before {
+    color: theme-color(primary);
+  }
+}
+
+input[type=checkbox].form-check-input {
+  &:before {
     content: map-get($bmt-icons, check-box-outline-blank);
   }
 
   &:checked:before {
-    font-family: $bmt-material-icons-font-family-name;
     content: map-get($bmt-icons, check-box);
-    color: theme-color(primary);
-  }
-
-  &:checked ~ .form-check-label {
-
   }
 }
 
-.form-check-label {
-  margin-bottom: 0; // Override default `<label>` bottom margin
-}
+input[type=radio].form-check-input {
+  &:before {
+    content: map-get($bmt-icons, radio-button-unchecked);
+  }
 
-//.form-check-inline {
-//  display: inline-flex;
-//  align-items: center;
-//  padding-left: 0; // Override base .form-check
-//  margin-right: $form-check-inline-margin-x;
-//
-//  // Undo .form-check-input defaults and add some `margin-right`.
-//  .form-check-input {
-//    position: static;
-//    margin-top: 0;
-//    margin-right: $form-check-inline-input-margin-x;
-//    margin-left: 0;
-//  }
-//}
+  &:checked:before {
+    content: map-get($bmt-icons, radio-button-checked);
+  }
+}
 
