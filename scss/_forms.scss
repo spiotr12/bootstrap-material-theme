@@ -151,12 +151,9 @@
 
 input[type=checkbox].form-check-input {
   color: inherit;
-  position: absolute;
   font-size: $checkbox-icon-font-size;
   height: $checkbox-icon-height;
   line-height: $checkbox-icon-height;
-  margin-top: $form-check-input-margin-y;
-  margin-left: -$form-check-input-gutter;
   @include appearance(none);
 
   &:focus {
