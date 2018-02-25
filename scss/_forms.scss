@@ -65,10 +65,14 @@
   }
 }
 
-//select.form-control {
-//@include appearance(none);
-//background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23424242' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E");
-//}
+select:not([type=multiple]).form-control {
+  @include appearance(none);
+
+  background: no-repeat center bottom, center calc(100% - 1px), no-repeat right;
+  background-size: $form-control-select-bg-size;
+  @include form-control-select-underline-bg-image(theme-color(primary), url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23424242' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E"));
+
+}
 
 // Label
 

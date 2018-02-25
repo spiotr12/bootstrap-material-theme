@@ -63,8 +63,11 @@ $input-padding-y:             rem(8px);
 $input-margin-top:            rem(16px);
 $label-static-font-size:      rem(12px);
 
-$form-control-bg-size:        0 100%, 100% 100% !default;
-$form-control-bg-size-active: 100% 100%, 100% 100% !default;
+$form-control-bg-size:               0 100%, 100% 100% !default;
+$form-control-bg-size-active:        100% 100%, 100% 100% !default;
+
+$form-control-select-bg-size:        0 100%, 100% 100%, 0.75em !default;
+$form-control-select-bg-size-active: 100% 100%, 100% 100% !default;
 
 $form-control-underline-size:               rem(1px) !default;
 $form-control-underline-size-active:        rem(2px) !default;
