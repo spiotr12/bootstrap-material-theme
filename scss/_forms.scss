@@ -67,11 +67,18 @@
 
 // Select
 
-select:not([type=multiple]).form-control {
+select:not([multiple]).form-control {
   @include appearance(none);
   background: no-repeat center bottom, center calc(100% - 1px), no-repeat right; /*top 1em right 5px*/
   background-size: $form-control-select-bg-size;
+
   @include form-control-select-underline-bg-image(theme-color(primary), $form-control-select-icon-url);
+
+  &:focus,
+  .is-focused & {
+    background-size: $form-control-select-bg-size-active;
+    transition-duration: 0.3s;
+  }
 }
 
 // Label
