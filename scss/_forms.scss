@@ -71,7 +71,8 @@ select:not([type=multiple]).form-control {
   @include appearance(none);
   background: no-repeat center bottom, center calc(100% - 1px), no-repeat right; /*top 1em right 5px*/
   background-size: $form-control-select-bg-size;
-  @include form-control-select-underline-bg-image(theme-color(primary), url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_arrow_drop_down_black_24px.svg"));
+  $svg-arrow: '<svg #{svg-base()}><path d="#{map-get($bmt-svg-icons, arrow-drop-down)}"/></svg>';
+  @include form-control-select-underline-bg-image(theme-color(primary), url("data:image/svg+xml;charset=utf8,#{_encode($svg-arrow)}"));
 }
 
 // Label
