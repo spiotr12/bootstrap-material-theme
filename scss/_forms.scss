@@ -65,6 +65,8 @@
   }
 }
 
+// Select
+
 select:not([type=multiple]).form-control {
   @include appearance(none);
   background: no-repeat center bottom, center calc(100% - 1px), no-repeat right; /*top 1em right 5px*/
@@ -145,12 +147,6 @@ select:not([type=multiple]).form-control {
 
 // Checkboxes and radios
 
-.form-check {
-  //position: relative;
-  //display: block;
-  //padding-left: $form-check-input-gutter;
-}
-
 .form-check-input {
   color: inherit;
   font-size: $checkbox-icon-font-size;
@@ -168,7 +164,7 @@ input[type=checkbox].form-check-input {
   background: $icon-background-position;
   @include svg-bg-icon(preserve, map-get($bmt-svg-icons, check-box-outline-blank));
   &:checked {
-    @include svg-bg-icon(map-get($theme-colors, primary), map-get($bmt-svg-icons, check-box));
+    @include svg-bg-icon($checkbox-checked-color, map-get($bmt-svg-icons, check-box));
   }
 }
 
@@ -177,7 +173,7 @@ input[type=radio].form-check-input {
   @include svg-bg-icon(preserve, map-get($bmt-svg-icons, radio-button-unchecked));
 
   &:checked {
-    @include svg-bg-icon(map-get($theme-colors, primary), map-get($bmt-svg-icons, radio-button-checked));
+    @include svg-bg-icon($checkbox-checked-color, map-get($bmt-svg-icons, radio-button-checked));
   }
 }
 

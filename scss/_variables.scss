@@ -44,17 +44,17 @@ $highlight-modifier-dark:   $highlight-modifier !default;
 
 // Buttons
 
-$input-btn-min-width:   rem(64px) !default;
-$btn-min-width:         $input-btn-min-width !default;
+$input-btn-min-width:       rem(64px) !default;
+$btn-min-width:             $input-btn-min-width !default;
 
-$btn-margin-x:          rem(8px) !default;
-$input-btn-margin-x:    $btn-margin-x !default;
+$btn-margin-x:              rem(8px) !default;
+$input-btn-margin-x:        $btn-margin-x !default;
 
 // Form
 
-$input-padding-y:             rem(8px);
-$input-margin-top:            rem(16px);
-$label-static-font-size:      rem(12px);
+$input-padding-y:                    rem(8px);
+$input-margin-top:                   rem(16px);
+$label-static-font-size:             rem(12px);
 
 $form-control-bg-size:               0 100%, 100% 100% !default;
 $form-control-bg-size-active:        100% 100%, 100% 100% !default;
@@ -73,15 +73,18 @@ $form-text-keep-status-color-negative-only: true !default;
 
 $checkbox-icon-font-size:                   1.5em !default;
 $checkbox-icon-height:                      1em !default;
+$checkbox-checked-color:                    map-get($theme-colors, primary) !default;
 
 // Dropdown
 
-$dropdown-item-line-height:   48px !default;
+$dropdown-item-line-height:     48px !default;
 
 // SVG Icons
 
 $icon-background-position:      no-repeat center !default;
+$icon-bg-path-d:                'M0 0h24v24H0z' !default;
 
+// Copied form material icons
 $bmt-svg-icons: (
         check-box: 'M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z',
         check-box-outline-blank: 'M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z',
