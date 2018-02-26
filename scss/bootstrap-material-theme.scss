@@ -8,12 +8,12 @@
 @import "~sass-svg/scss/main";
 //
 @import "material-colors";
-@import "variables"; // Custom
-@import "bootstrap-variables"; // Override
 // Bootstrap 4
 @import "~bootstrap/scss/functions";
 @import "functions";  // Bootstrap Material Theme
+@import "bootstrap-variables"; // Override
 @import "~bootstrap/scss/variables";
+@import "variables"; // Custom
 @import "mixins"; // Bootstrap 4 & Override
 @import "~bootstrap/scss/root";
 @import "~bootstrap/scss/reboot";

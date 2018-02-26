@@ -42,6 +42,23 @@ $highlight-modifier:        7.5% !default;
 $highlight-modifier-light:  $highlight-modifier !default;
 $highlight-modifier-dark:   $highlight-modifier !default;
 
+// SVG Icons
+
+$icon-background-position:      no-repeat center !default;
+$icon-bg-path-d:                'M0 0h24v24H0z' !default;
+
+// Copied form material icons (https://material.io/icons/) and material design icons (https://materialdesignicons.com/)
+$bmt-svg-icons: (
+        check-box: 'M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z',
+        check-box-outline-blank: 'M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z',
+        radio-button-unchecked: 'M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z',
+        radio-button-checked: 'M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z',
+        arrow-drop-up: 'M7 15L12 10L17 15H7Z',
+        arrow-drop-down: 'M7 10l5 5 5-5z',
+        arrow-drop-left: 'M14 7L9 12L14 17V7Z', // mdi
+        arrow-drop-right: 'M10 17L15 12L10 7V17Z', // mdi
+) !default;
+
 // Buttons
 
 $input-btn-min-width:       rem(64px) !default;
@@ -60,6 +77,7 @@ $form-control-bg-size:               0 100%, 100% 100% !default;
 $form-control-bg-size-active:        100% 100%, 100% 100% !default;
 
 $form-control-select-bg-size:        $form-control-bg-size, 1.5em !default;
+$form-control-select-icon-url:       url("data:image/svg+xml;charset=utf8,#{_encode('<svg #{svg-base()}><path d=\"#{map-get($bmt-svg-icons, arrow-drop-down)}\"/></svg>')}")!default;
 //$form-control-select-bg-size-active: 100% 100%, 100% 100% !default;
 
 $form-control-underline-size:               rem(1px) !default;
@@ -78,17 +96,3 @@ $checkbox-checked-color:                    map-get($theme-colors, primary) !def
 // Dropdown
 
 $dropdown-item-line-height:     48px !default;
-
-// SVG Icons
-
-$icon-background-position:      no-repeat center !default;
-$icon-bg-path-d:                'M0 0h24v24H0z' !default;
-
-// Copied form material icons
-$bmt-svg-icons: (
-        check-box: 'M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z',
-        check-box-outline-blank: 'M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z',
-        radio-button-unchecked: 'M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z',
-        radio-button-checked: 'M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z',
-        arrow-drop-down: 'M7 10l5 5 5-5z',
-);
