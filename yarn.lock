@@ -985,6 +985,16 @@ sass-rem@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/sass-rem/-/sass-rem-2.0.0.tgz#b1066f2077f59b95f9ef61c80ca2defd502c65c0"
 
+sass-svg@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/sass-svg/-/sass-svg-1.1.0.tgz#5d8438aa09f9374558399314009836771e26ed27"
+  dependencies:
+    sassdash "^0.8.0"
+
+sassdash@^0.8.0:
+  version "0.8.2"
+  resolved "https://registry.yarnpkg.com/sassdash/-/sassdash-0.8.2.tgz#42d59b4932f13034695604bd8437e2b598afd368"
+
 scss-tokenizer@^0.2.3:
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/scss-tokenizer/-/scss-tokenizer-0.2.3.tgz#8eb06db9a9723333824d3f5530641149847ce5d1"
