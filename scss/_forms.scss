@@ -81,6 +81,13 @@ select:not([multiple]).form-control {
   }
 }
 
+// Textarea
+
+textarea.form-control {
+  min-height: 1rem + $input-margin-top + $input-padding-y;
+  height: 1rem + $input-margin-top + $input-padding-y;
+}
+
 // Label
 
 .label {
