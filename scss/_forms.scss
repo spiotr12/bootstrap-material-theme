@@ -174,22 +174,19 @@ select:not([type=multiple]).form-control {
 }
 
 input[type=checkbox].form-check-input {
-  & {
-    @include svg-icon(preserve, map-get($bmt-svg-icons, check-box-outline-blank));
-  }
-
+  background: $icon-background-position;
+  @include svg-bg-icon(preserve, map-get($bmt-svg-icons, check-box-outline-blank));
   &:checked {
-    @include svg-icon(map-get($theme-colors, primary), map-get($bmt-svg-icons, check-box));
+    @include svg-bg-icon(map-get($theme-colors, primary), map-get($bmt-svg-icons, check-box));
   }
 }
 
 input[type=radio].form-check-input {
-  &:before {
-    content: map-get($bmt-icons, radio-button-unchecked);
-  }
+  background: $icon-background-position;
+  @include svg-bg-icon(preserve, map-get($bmt-svg-icons, radio-button-unchecked));
 
-  &:checked:before {
-    content: map-get($bmt-icons, radio-button-checked);
+  &:checked {
+    @include svg-bg-icon(map-get($theme-colors, primary), map-get($bmt-svg-icons, radio-button-checked));
   }
 }
 

@@ -1,0 +1,22 @@
+@mixin svg-bg-icon($color, $path-d: null) {
+  $bg-path-d: 'M0 0h24v24H0z';
+  @include svg((
+          fill: $color,
+          height: 24,
+          viewBox: 0 0 24 24,
+          width: 24
+  )) {
+    @include svg('path', (
+            fill: none,
+            d: $bg-path-d
+    ));
+
+    @if ($path-d) {
+      @include svg('path', (
+              d: $path-d
+      ));
+    }
+
+    @content;
+  }
+}
