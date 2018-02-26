@@ -12,3 +12,12 @@
     @return 'light';
   }
 }
+
+@function svg-bg-icon-base($color, $height: 24, $width: 24, $min-y: 0, $min-x: 0) {
+  @return (
+          fill: $color,
+          height: $height,
+          viewBox: $min-x $min-y $width $height,
+          width: $width
+  )
+}

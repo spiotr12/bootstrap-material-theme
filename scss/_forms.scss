@@ -162,18 +162,27 @@ select:not([type=multiple]).form-control {
 
 input[type=checkbox].form-check-input {
   background: $icon-background-position;
-  @include svg-bg-icon(preserve, map-get($bmt-svg-icons, check-box-outline-blank));
+  @include svg(svg-bg-icon-base($body-color)) {
+    @include svg('path', (d: map-get($bmt-svg-icons, check-box-outline-blank)));
+  }
+
   &:checked {
-    @include svg-bg-icon($checkbox-checked-color, map-get($bmt-svg-icons, check-box));
+    @include svg(svg-bg-icon-base($checkbox-checked-color)) {
+      @include svg('path', (d: map-get($bmt-svg-icons, check-box)));
+    }
   }
 }
 
 input[type=radio].form-check-input {
   background: $icon-background-position;
-  @include svg-bg-icon(preserve, map-get($bmt-svg-icons, radio-button-unchecked));
+  @include svg(svg-bg-icon-base($body-color)) {
+    @include svg('path', (d: map-get($bmt-svg-icons, radio-button-unchecked)));
+  }
 
   &:checked {
-    @include svg-bg-icon($checkbox-checked-color, map-get($bmt-svg-icons, radio-button-checked));
+    @include svg(svg-bg-icon-base($checkbox-checked-color)) {
+      @include svg('path', (d: map-get($bmt-svg-icons, radio-button-checked)));
+    }
   }
 }
 
