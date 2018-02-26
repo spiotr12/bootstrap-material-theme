@@ -162,15 +162,6 @@ select:not([type=multiple]).form-control {
   &:focus {
     outline-style: none;
   }
-
-  &:before,
-  &:checked:before {
-    font-family: $bmt-material-icons-font-family-name;
-  }
-
-  &:checked:before {
-    color: theme-color(primary);
-  }
 }
 
 input[type=checkbox].form-check-input {
