@@ -1,4 +1,4 @@
-// Variables
+// Variables BOOTSTRAP MATERIAL DESIGN OVERRIDE
 
 // Variables should follow the `$component-state-property-size` formula for
 // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
@@ -214,7 +214,7 @@ $border-radius:               rem(2px) !default;
 //$component-active-color:      $white !default;
 //$component-active-bg:         theme-color("primary") !default;
 
-//$caret-width:                 .3em !default;
+$caret-width:                 5px !default; // .3em !default;
 
 //$transition-base:             all .2s ease-in-out !default;
 //$transition-fade:             opacity .15s linear !default;
