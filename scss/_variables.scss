@@ -68,9 +68,10 @@ $label-keep-status-color:                   true !default;
 $form-text-keep-status-color:               true !default;
 $form-text-keep-status-color-negative-only: true !default;
 
-$checkbox-icon-font-size:                   1.5em !default;
-$checkbox-icon-height:                      1em !default;
+$checkbox-icon-height:                      1.5em !default;
+$checkbox-icon-width:                       $checkbox-icon-height !default;
 $checkbox-checked-color:                    map-get($theme-colors, primary) !default;
+$checkbox-margin-right:                     rem(8px) !default;
 
 // Dropdown
 

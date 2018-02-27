@@ -996,7 +996,7 @@ sass-svg@1.1.0:
   dependencies:
     sassdash "^0.8.0"
 
-sassdash@^0.8.0, sassdash@^0.8.2:
+sassdash@0.8.2, sassdash@^0.8.0:
   version "0.8.2"
   resolved "https://registry.yarnpkg.com/sassdash/-/sassdash-0.8.2.tgz#42d59b4932f13034695604bd8437e2b598afd368"
 

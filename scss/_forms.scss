@@ -163,8 +163,7 @@ textarea.form-control {
 
 .form-check-input {
   color: inherit;
-  font-size: $checkbox-icon-font-size;
-  width: $checkbox-icon-height;
+  width: $checkbox-icon-width;
   height: $checkbox-icon-height;
   line-height: $checkbox-icon-height;
   @include appearance(none);
