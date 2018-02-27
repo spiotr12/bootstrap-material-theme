@@ -1,6 +1,7 @@
 {
   "name": "bootstrap-material-theme",
   "version": "0.0.3",
+  "author": "Piotr Starzec",
   "scripts": {
     "scss": "node-sass --importer=node_modules/node-sass-tilde-importer --watch scss/bootstrap-material-theme.scss -o dist/css/"
   },
