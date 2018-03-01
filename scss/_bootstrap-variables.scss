@@ -326,7 +326,7 @@ $input-btn-padding-y:         rem(7px) !default; // .375rem !default;
 $input-btn-padding-x:         rem(16px) !default; // .75rem !default;
 //$input-btn-line-height:       $line-height-base !default;
 
-$input-btn-focus-width:       .1rem !default; // .2rem !default;
+$input-btn-focus-width:       rem(1px) !default; // .2rem !default;
 //$input-btn-focus-color:       rgba($component-active-bg, .25) !default;
 //$input-btn-focus-box-shadow:  0 0 0 $input-btn-focus-width $input-btn-focus-color !default;
 
