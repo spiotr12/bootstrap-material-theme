@@ -781,11 +781,11 @@ $dropdown-item-padding-x:           rem(16px) !default; // 1.5rem !default;
 
 // Progress bars
 
-//$progress-height:                   1rem !default;
+$progress-height:                   4px !default; // 1rem !default;
 //$progress-font-size:                ($font-size-base * .75) !default;
 //$progress-bg:                       $gray-200 !default;
-//$progress-border-radius:            $border-radius !default;
-//$progress-box-shadow:               inset 0 .1rem .1rem rgba($black, .1) !default;
+$progress-border-radius:            0 !default; // $border-radius !default;
+$progress-box-shadow:               0 !default; // inset 0 .1rem .1rem rgba($black, .1) !default;
 //$progress-bar-color:                $white !default;
 //$progress-bar-bg:                   theme-color("primary") !default;
 //$progress-bar-animation-timing:     1s linear infinite !default;
