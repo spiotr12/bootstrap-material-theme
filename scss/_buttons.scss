@@ -1,7 +1,16 @@
 .btn {
   text-transform: uppercase !important;
   min-width: $btn-min-width;
-  margin: 0 $input-btn-margin-x;
+  margin: 0 ($input-btn-margin-x/2);
+
+  &:first-child {
+    margin-left: $input-btn-margin-x;
+  }
+
+  &:last-child {
+    margin-right: $input-btn-margin-x;
+  }
+
   &:not([class*=btn-outline]) {
     border: 0;
   }

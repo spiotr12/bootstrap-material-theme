@@ -1,13 +1,12 @@
 {
   "name": "bootstrap-material-theme",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Piotr Starzec",
   "repository": "https://github.com/spiotr12/bootstrap-material-theme.git",
   "scripts": {
     "scss": "node-sass --importer=node_modules/node-sass-tilde-importer --watch scss/bootstrap-material-theme.scss -o dist/css/"
   },
   "dependencies": {
-    "bootstrap": "4.0.0",
     "material-colors": "1.2.5",
     "roboto-fontface": "0.8.0",
     "sass-rem": "2.0.0",
@@ -15,6 +14,7 @@
     "sassdash": "0.8.2"
   },
   "devDependencies": {
+    "bootstrap": "^4.0.0",
     "node-sass": "4.7.2",
     "node-sass-tilde-importer": "1.0.1"
   }
