@@ -5,6 +5,7 @@
   "scripts": {
     "scss": "node-sass --importer=node_modules/node-sass-tilde-importer --watch scss/bootstrap-material-theme.scss -o dist/css/"
   },
+  "sass": "scss/bootstrap-material-theme.scss",
   "dependencies": {
     "bootstrap": "4.0.0",
     "material-colors": "1.2.5",
