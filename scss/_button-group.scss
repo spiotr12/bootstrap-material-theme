@@ -1,0 +1,15 @@
+.btn-group {
+  margin: 0 ($input-btn-margin-x/2);
+
+  &:first-child {
+    margin-left: $input-btn-margin-x;
+  }
+
+  &:last-child {
+    margin-right: $input-btn-margin-x;
+  }
+
+  > .btn:last-child {
+    margin-right: 0;
+  }
+}
