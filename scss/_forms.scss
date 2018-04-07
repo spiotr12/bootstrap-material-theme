@@ -3,11 +3,21 @@
   overflow: auto;
   padding-top: 1rem;
   padding-bottom: $form-text-margin-top + .8rem; // For form-text
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 // Inputs
 
 .form-control {
+
+  &:disabled,
+  &:focus {
+    background-color: inherit;
+  }
+
   background: no-repeat center bottom, center calc(100% - 1px);
   background-size: $form-control-bg-size;
   padding: $input-padding-y 0;
