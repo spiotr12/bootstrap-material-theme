@@ -1,13 +1,13 @@
 .form-group {
   position: relative; // For floating labels
   overflow: auto;
+  padding-top: 1rem;
+  padding-bottom: $form-text-margin-top + .8rem; // For form-text
 }
 
 // Inputs
 
 .form-control {
-  margin-top: $input-margin-top; // For label
-  margin-bottom: $form-text-margin-top + .8rem; // For form-text
   background: no-repeat center bottom, center calc(100% - 1px);
   background-size: $form-control-bg-size;
   padding: $input-padding-y 0;
