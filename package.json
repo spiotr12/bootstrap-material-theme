@@ -9,8 +9,8 @@
   "sass": "scss/bootstrap-material-theme.scss",
   "dependencies": {
     "material-colors": "1.2.5",
-    "roboto-fontface": "0.8.0",
-    "sass-rem": "2.0.0",
+    "roboto-fontface": "^0.9.0",
+    "sass-rem": "^2.0.1",
     "sass-svg": "1.1.0",
     "sassdash": "0.8.2"
   },

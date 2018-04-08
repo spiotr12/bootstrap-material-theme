@@ -108,7 +108,7 @@ boom@5.x.x:
   dependencies:
     hoek "4.x.x"
 
-bootstrap@4.0.0:
+bootstrap@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.0.0.tgz#ceb03842c145fcc1b9b4e15da2a05656ba68469a"
 
@@ -969,9 +969,9 @@ rimraf@2:
   dependencies:
     glob "^7.0.5"
 
-roboto-fontface@0.8.0:
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/roboto-fontface/-/roboto-fontface-0.8.0.tgz#031a83c8f79932801a57d83bf743f37250163499"
+roboto-fontface@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/roboto-fontface/-/roboto-fontface-0.9.0.tgz#4829eeffc0502f09b88c7f3980fa3b304eda4c49"
 
 safe-buffer@^5.0.1, safe-buffer@^5.1.1, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "5.1.1"
@@ -986,9 +986,9 @@ sass-graph@^2.2.4:
     scss-tokenizer "^0.2.3"
     yargs "^7.0.0"
 
-sass-rem@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/sass-rem/-/sass-rem-2.0.0.tgz#b1066f2077f59b95f9ef61c80ca2defd502c65c0"
+sass-rem@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/sass-rem/-/sass-rem-2.0.1.tgz#dd863ec9ca5e0597eae5dd239f1f00a6c0f729b0"
 
 sass-svg@1.1.0:
   version "1.1.0"
