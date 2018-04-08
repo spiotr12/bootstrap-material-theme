@@ -57,7 +57,7 @@ $form-control-bg-size-active:        100% 100%, 100% 100% !default;
 $form-control-select-size:           1.5em !default;
 $form-control-select-bg-size:        $form-control-bg-size, $form-control-select-size !default;
 $form-control-select-bg-size-active: $form-control-bg-size-active, $form-control-select-size !default;
-$form-control-select-icon-url:       url("data:image/svg+xml;charset=utf8,#{'<svg #{svg-base()}><path d=\"#{map-get($bmt-svg-icons, arrow-drop-down)}\"/></svg>'}") !default;
+$form-control-select-icon-url:       url(build-svg-url(map-get($bmt-svg-icons, arrow-drop-down))) !default;
 
 $form-control-underline-size:               rem(1px) !default;
 $form-control-underline-size-active:        rem(2px) !default;

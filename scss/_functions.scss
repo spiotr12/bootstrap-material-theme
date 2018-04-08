@@ -22,6 +22,22 @@
   )
 }
 
-@function svg-base($color: $body-color, $width: 24, $height: 24, $min-x: 0, $min-y: 0) {
+@function svg-base-attributes($color: $body-color, $width: 24, $height: 24, $min-x: 0, $min-y: 0) {
   @return 'fill="#{$color}" height="#{$height}" viewBox="#{$min-x} #{$min-y} #{$width} #{$height}" width="#{$width}" xmlns="http://www.w3.org/2000/svg"'
+}
+
+@function svg-no-fill-attributes() {
+  @return 'd="#{$icon-bg-path-d}" fill="none"';
+}
+
+@function svg-main-path-attribute($svg-icon-path-d) {
+  @return 'd="#{$svg-icon-path-d}"';
+}
+
+@function build-svg-url($svg-icon-path-d, $color: $body-color, $width: 24, $height: 24, $min-x: 0, $min-y: 0) {
+  @return "data:image/svg+xml;charset=utf8,
+  <svg #{svg-base-attributes($color, $width, $height, $min-x, $min-y)}>
+    <path #{svg-main-path-attribute($svg-icon-path-d)}/>
+    <path #{svg-no-fill-attributes()}/>
+  </svg>";
 }

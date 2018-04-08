@@ -110,6 +110,50 @@
 
 // Checkboxes and radios
 
+.form-check {
+  min-height: $checkbox-icon-height;
+}
+
+.form-check-input {
+  color: inherit;
+  width: $checkbox-icon-width;
+  height: $checkbox-icon-height;
+  line-height: $checkbox-icon-height;
+  @include appearance(none);
+
+  &:focus {
+    outline-style: none;
+  }
+}
+
+// FIXME
+input[type=checkbox].form-check-input {
+  $checkbox-unchecked: map-get($bmt-svg-icons, check-box-outline-blank);
+  $checkbox-checked: map-get($bmt-svg-icons, check-box);
+
+  background: $icon-background-position;
+  background-image: url(build-svg-url($checkbox-unchecked));
+
+  &:checked {
+    background: $icon-background-position;
+    background-image: url(build-svg-url($checkbox-checked, $checkbox-checked-color));
+  }
+
+}
+
+input[type=radio].form-check-input {
+  $radio-unchecked: map-get($bmt-svg-icons, radio-button-unchecked);
+  $radio-checked: map-get($bmt-svg-icons, radio-button-checked);
+
+  background: $icon-background-position;
+  background-image: url(build-svg-url($radio-unchecked));
+
+  &:checked {
+    background: $icon-background-position;
+    background-image: url(build-svg-url($radio-checked, $checkbox-checked-color));
+  }
+}
+
 // Select
 
 select:not([multiple]).form-control {

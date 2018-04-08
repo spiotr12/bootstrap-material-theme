@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-material-theme",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "author": "Piotr Starzec",
   "repository": "https://github.com/spiotr12/bootstrap-material-theme.git",
   "scripts": {
@@ -10,9 +10,7 @@
   "dependencies": {
     "material-colors": "1.2.5",
     "roboto-fontface": "^0.9.0",
-    "sass-rem": "^2.0.1",
-    "sass-svg": "1.1.0",
-    "sassdash": "0.8.2"
+    "sass-rem": "^2.0.1"
   },
   "devDependencies": {
     "bootstrap": "^4.0.0",
