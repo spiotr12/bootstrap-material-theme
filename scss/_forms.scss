@@ -187,30 +187,31 @@ textarea.form-control {
     outline-style: none;
   }
 }
-
+// FIXME
 input[type=checkbox].form-check-input {
   background: $icon-background-position;
   @include svg(svg-bg-icon-base()) {
-    @include svg('path', (d: map-get($bmt-svg-icons, check-box-outline-blank)));
+    $path: 'path';
+    @include svg($path, (d: map-get($bmt-svg-icons, check-box-outline-blank)));
   }
 
-  &:checked {
-    @include svg(svg-bg-icon-base($checkbox-checked-color)) {
-      @include svg('path', (d: map-get($bmt-svg-icons, check-box)));
-    }
-  }
+//  &:checked {
+//    @include svg(svg-bg-icon-base($checkbox-checked-color)) {
+//      @include svg('path', (d: map-get($bmt-svg-icons, check-box)));
+//    }
+//  }
 }
-
-input[type=radio].form-check-input {
-  background: $icon-background-position;
-  @include svg(svg-bg-icon-base()) {
-    @include svg('path', (d: map-get($bmt-svg-icons, radio-button-unchecked)));
-  }
-
-  &:checked {
-    @include svg(svg-bg-icon-base($checkbox-checked-color)) {
-      @include svg('path', (d: map-get($bmt-svg-icons, radio-button-checked)));
-    }
-  }
-}
+//
+//input[type=radio].form-check-input {
+//  background: $icon-background-position;
+//  @include svg(svg-bg-icon-base()) {
+//    @include svg('path', (d: map-get($bmt-svg-icons, radio-button-unchecked)));
+//  }
+//
+//  &:checked {
+//    @include svg(svg-bg-icon-base($checkbox-checked-color)) {
+//      @include svg('path', (d: map-get($bmt-svg-icons, radio-button-checked)));
+//    }
+//  }
+//}
 
