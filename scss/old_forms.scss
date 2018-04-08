@@ -1,10 +1,8 @@
-// Form
-
 .form-group {
   position: relative; // For floating labels
   overflow: auto;
   padding-top: 1rem;
-  padding-bottom: $form-text-margin-top + .8rem; // TODO: For form-text
+  padding-bottom: $form-text-margin-top + .8rem; // For form-text
 
   &:last-child {
     margin-bottom: 0;
@@ -14,6 +12,7 @@
 // Inputs
 
 .form-control {
+
   &:disabled,
   &:focus {
     background-color: inherit;
@@ -77,39 +76,6 @@
   }
 }
 
-// Input Message
-
-.form-text {
-  position: absolute;
-  bottom: 0;
-  margin-top: 0;
-  color: $grey;
-
-  @each $status in $statuses {
-    .has-#{$status}.is-focused &,
-    .has-#{$status}.is-filled.is-focused & {
-      color: theme-color($status);
-    }
-
-    @if ($form-text-keep-status-color-negative-only == false and $form-text-keep-status-color == true) {
-      .has-#{$status}.is-filled & {
-        color: theme-color($status);
-      }
-    }
-  }
-
-  @if ($form-text-keep-status-color-negative-only == true) {
-    .has-warning.is-filled & {
-      color: theme-color(warning);
-    }
-    .has-danger.is-filled & {
-      color: theme-color(danger);
-    }
-  }
-}
-
-// Checkboxes and radios
-
 // Select
 
 select:not([multiple]).form-control {
@@ -117,29 +83,12 @@ select:not([multiple]).form-control {
   background: no-repeat center bottom, center calc(100% - 1px), no-repeat right; /*top 1em right 5px*/
   background-size: $form-control-select-bg-size;
 
-  @include form-control-select-underline-bg-image(theme-color(primary));
+  @include form-control-select-underline-bg-image(theme-color(primary), $form-control-select-icon-url);
 
   &:focus,
   .is-focused & {
     background-size: $form-control-select-bg-size-active;
     transition-duration: 0.3s;
-  }
-
-  @each $status in $statuses {
-    // Underline
-    .has-#{$status}.is-focused &, /* show status color when input is focused */
-    .has-#{$status}.keep-underline & /* keep status color when input is empty */
-    {
-      background-size: $form-control-select-bg-size-active;
-      @include form-control-select-underline-bg-image(theme-color($status));
-    }
-    @if ($form-control-keep-underline-status-color == true) {
-      .has-#{$status}.is-filled & /* keep status color when input is filled*/
-      {
-        background-size: $form-control-select-bg-size-active;
-        @include form-control-select-underline-bg-image(theme-color($status));
-      }
-    }
   }
 }
 
@@ -189,3 +138,80 @@ textarea.form-control {
     }
   }
 }
+
+// Input Message
+
+.form-text {
+  position: absolute;
+  bottom: 0;
+  margin-top: 0;
+  color: $grey;
+
+  @each $status in $statuses {
+    .has-#{$status}.is-focused &,
+    .has-#{$status}.is-filled.is-focused & {
+      color: theme-color($status);
+    }
+
+    @if ($form-text-keep-status-color-negative-only == false and $form-text-keep-status-color == true) {
+      .has-#{$status}.is-filled & {
+        color: theme-color($status);
+      }
+    }
+  }
+
+  @if ($form-text-keep-status-color-negative-only == true) {
+    .has-warning.is-filled & {
+      color: theme-color(warning);
+    }
+    .has-danger.is-filled & {
+      color: theme-color(danger);
+    }
+  }
+}
+
+// Checkboxes and radios
+
+.form-check {
+  min-height: $checkbox-icon-height;
+}
+
+.form-check-input {
+  color: inherit;
+  width: $checkbox-icon-width;
+  height: $checkbox-icon-height;
+  line-height: $checkbox-icon-height;
+  @include appearance(none);
+
+  &:focus {
+    outline-style: none;
+  }
+}
+// FIXME
+input[type=checkbox].form-check-input {
+  background: $icon-background-position;
+  @include svg(svg-bg-icon-base()) {
+    $path: 'path';
+    @include svg($path, (d: map-get($bmt-svg-icons, check-box-outline-blank)));
+  }
+
+//  &:checked {
+//    @include svg(svg-bg-icon-base($checkbox-checked-color)) {
+//      @include svg('path', (d: map-get($bmt-svg-icons, check-box)));
+//    }
+//  }
+}
+//
+//input[type=radio].form-check-input {
+//  background: $icon-background-position;
+//  @include svg(svg-bg-icon-base()) {
+//    @include svg('path', (d: map-get($bmt-svg-icons, radio-button-unchecked)));
+//  }
+//
+//  &:checked {
+//    @include svg(svg-bg-icon-base($checkbox-checked-color)) {
+//      @include svg('path', (d: map-get($bmt-svg-icons, radio-button-checked)));
+//    }
+//  }
+//}
+

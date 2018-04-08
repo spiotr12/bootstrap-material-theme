@@ -1,26 +1,26 @@
 @mixin form-control-underline-bg-image($color, $base-color: $input-border-color) {
   background-image: linear-gradient(
-                  to top,
-                  $color $form-control-underline-size-active,
-                  fade-out($color, 1) $form-control-underline-size-active
+    to top,
+    $color $form-control-underline-size-active,
+    fade-out($color, 1) $form-control-underline-size-active
   ),
   linear-gradient(
-                  to top,
-                  $base-color $form-control-underline-size,
-                  fade-out($base-color, 1) $form-control-underline-size
+    to top,
+    $base-color $form-control-underline-size,
+    fade-out($base-color, 1) $form-control-underline-size
   );
 }
 
-@mixin form-control-select-underline-bg-image($color, $background, $base-color: $input-border-color) {
+@mixin form-control-select-underline-bg-image($color, $background: $form-control-select-icon-url, $base-color: $input-border-color) {
   background-image: linear-gradient(
-                  to top,
-                  $color $form-control-underline-size-active,
-                  fade-out($color, 1) $form-control-underline-size-active
+    to top,
+    $color $form-control-underline-size-active,
+    fade-out($color, 1) $form-control-underline-size-active
   ),
   linear-gradient(
-                  to top,
-                  $base-color $form-control-underline-size,
-                  fade-out($base-color, 1) $form-control-underline-size
+    to top,
+    $base-color $form-control-underline-size,
+    fade-out($base-color, 1) $form-control-underline-size
   ),
   $background;
 }
